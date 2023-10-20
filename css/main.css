@@ -534,40 +534,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
 .absolute {
   position: absolute;
 }
@@ -698,18 +664,6 @@ video {
   --tw-gradient-to: #93c5fd var(--tw-gradient-to-position);
 }
 
-.p-8 {
-  padding: 2rem;
-}
-
-.p-10 {
-  padding: 2.5rem;
-}
-
-.p-12 {
-  padding: 3rem;
-}
-
 .p-14 {
   padding: 3.5rem;
 }
@@ -727,26 +681,6 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.px-16 {
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-
-.px-32 {
-  padding-left: 8rem;
-  padding-right: 8rem;
 }
 
 .pt-20 {
@@ -817,12 +751,6 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
-@font-face {
-  font-family: raleway;
-
-  src: url("/fonts/raleway.ttf") format("opentype");
-}
-
 .hover\:bg-red-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(185 28 28 / var(--tw-bg-opacity));
@@ -866,16 +794,6 @@ video {
   .lg\:px-32 {
     padding-left: 8rem;
     padding-right: 8rem;
-  }
-
-  .lg\:px-40 {
-    padding-left: 10rem;
-    padding-right: 10rem;
-  }
-
-  .lg\:px-36 {
-    padding-left: 9rem;
-    padding-right: 9rem;
   }
 
   .lg\:pt-32 {
