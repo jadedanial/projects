@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jade Danial</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body
+    class="h-screen bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-white via-white to-blue-300 text-black font-primary"
+  >
+    <header>
+      <nav class="flex text-base justify-between items-center p-14 lg:px-32">
+        <div>
+          <a id="p_lg_link" class="font-bold text-2xl cursor-pointer"
+            ><span class="text-blue-500">JadeDanial</span
+            ><span class="text-black">Projects.</span></a
+          >
+        </div>
+        <div>
+          <ul class="hidden lg:flex items-center space-x-16">
+            <li>
+              <a
+                id="p1_lg_link"
+                class="hover:text-blue-400 ease-in duration-200 cursor-pointer"
+                >Asset Maintenance System</a
+              >
+            </li>
+            <li>
+              <a
+                id="p2_lg_link"
+                class="hover:text-blue-400 ease-in duration-200 cursor-pointer"
+                >Point Of Sale</a
+              >
+            </li>
+            <li>
+              <a
+                id="p3_lg_link"
+                class="hover:text-blue-400 ease-in duration-200 cursor-pointer"
+                >Personal Portfolio</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!--Mobile Screen-->
+        <div id="hamburger" class="lg:hidden cursor-pointer z-50 text-3xl">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div
+          id="menu"
+          class="hidden font-bold bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-white via-white to-blue-300 absolute inset-0 lg:hidden"
+        >
+          <ul class="grid place-items-center pt-20 space-y-8">
+            <li>
+              <a
+                id="p1_sm_link"
+                class="hover:text-blue-400 ease-in duration-200 cursor-pointer"
+                >Asset Maintenance System</a
+              >
+            </li>
+            <li>
+              <a
+                id="p2_sm_link"
+                class="hover:text-blue-400 ease-in duration-200 cursor-pointer"
+                >Point Of Sale</a
+              >
+            </li>
+            <li>
+              <a
+                id="p3_sm_link"
+                class="hover:text-blue-400 ease-in duration-200 cursor-pointer"
+                >Personal Portfolio</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div
+        id="p"
+        class="h-full pt-8 grid grid-cols-1 gap-16 content-center lg:grid-cols-[40%_50%] lg:content-start lg:pt-32"
+      >
+        <div class="flex justify-center lg:justify-end">
+          <img
+            class="rounded-full w-56 h-56"
+            src="/images/profile.jpeg"
+            alt="image description"
+          />
+        </div>
+        <div
+          class="text-5xl font-bold text-center flex justify-center lg:text-6xl lg:text-left lg:justify-start"
+        >
+          <div>
+            <p>Hi There,</p>
+            <p class="text-blue-500">
+              <span class="text-black">I am</span> Jade Danial
+            </p>
+            <p class="text-lg lg:text-2xl">Full Stack Web Developer</p>
+            <ul
+              class="flex justify-center items-center space-x-4 py-4 lg:justify-start"
+            >
+              <a
+                class="border-red-500 bg-none text-red-500 hover:bg-red-700 hover:text-white text-base px-4 py-2 h-10 border-2 rounded-full"
+                href="https://drive.google.com/file/d/11XI76cVk92xfhcvwjZ7JDyOwLQjKg_uX/view?usp=sharing"
+                role=""
+                button
+              >
+                Download CV
+              </a>
+              <a
+                class="text-5xl"
+                href="https://github.com/jadedanial"
+                role="button"
+              >
+                <i
+                  class="fa-brands fa-github fa-xs"
+                  style="color: #e64d4d"
+                  onMouseOver="this.style.color='#930202'"
+                  onMouseOut="this.style.color='#e64d4d'"
+                ></i>
+              </a>
+              <a
+                class="text-5xl"
+                href="https://www.linkedin.com/in/jadedanial/"
+                role="button"
+              >
+                <i
+                  class="fa-brands fa-linkedin-in fa-xs"
+                  style="color: #e64d4d"
+                  onMouseOver="this.style.color='#930202'"
+                  onMouseOut="this.style.color='#e64d4d'"
+                ></i>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      //Mobile Menu
+      const hamburger = document.querySelector("#hamburger");
+      const menu = document.querySelector("#menu");
+      const p = document.querySelector("#p");
+      const p_lg_link = document.querySelector("#p_lg_link");
+      const p1_lg_link = document.querySelector("#p1_lg_link");
+      const p2_lg_link = document.querySelector("#p2_lg_link");
+      const p3_lg_link = document.querySelector("#p3_lg_link");
+      const p1_sm_link = document.querySelector("#p1_sm_link");
+      const p2_sm_link = document.querySelector("#p2_sm_link");
+      const p3_sm_link = document.querySelector("#p3_sm_link");
+      const faSolid = document.querySelector(".fa-solid");
+
+      p_lg_link.addEventListener("click", () => {
+        p.classList.toggle("hidden");
+      });
+
+      hamburger.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+        faSolid.classList.toggle("fa-xmark");
+      });
+
+      [p1_sm_link, p2_sm_link, p3_sm_link].forEach((link) => {
+        link.addEventListener("click", () => {
+          menu.classList.toggle("hidden");
+          faSolid.classList.toggle("fa-xmark");
+        });
+      });
+    </script>
+  </body>
+</html>
