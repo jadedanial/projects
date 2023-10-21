@@ -25,27 +25,16 @@
           >
         </div>
         <div>
-          <ul class="hidden text-lg lg:flex items-center space-x-16">
+          <ul class="hidden lg:flex items-center space-x-16">
             <li>
               <a
                 id="p1_lg_link"
-                class="hover:text-blue-400 ease-in duration-200 cursor-pointer"
-                >Asset Maintenance System
+                class="cursor-pointer flex flex-row items-center"
+                role="button"
+                ><img
+                  src="https://raw.githubusercontent.com/jadedanial/asset-maintenance-system/main/logo.png"
+                />
               </a>
-            </li>
-            <li>
-              <a
-                id="p2_lg_link"
-                class="hover:text-blue-400 ease-in duration-200 cursor-pointer"
-                >Point Of Sale</a
-              >
-            </li>
-            <li>
-              <a
-                id="p3_lg_link"
-                class="hover:text-blue-400 ease-in duration-200 cursor-pointer"
-                >Personal Portfolio</a
-              >
             </li>
           </ul>
         </div>
@@ -61,23 +50,12 @@
             <li>
               <a
                 id="p1_sm_link"
-                class="hover:text-blue-400 ease-in duration-200 cursor-pointer"
-                >Asset Maintenance System</a
-              >
-            </li>
-            <li>
-              <a
-                id="p2_sm_link"
-                class="hover:text-blue-400 ease-in duration-200 cursor-pointer"
-                >Point Of Sale</a
-              >
-            </li>
-            <li>
-              <a
-                id="p3_sm_link"
-                class="hover:text-blue-400 ease-in duration-200 cursor-pointer"
-                >Personal Portfolio</a
-              >
+                class="cursor-pointer flex flex-row items-center"
+                role="button"
+                ><img
+                  src="https://raw.githubusercontent.com/jadedanial/asset-maintenance-system/main/logo.png"
+                />
+              </a>
             </li>
           </ul>
         </div>
@@ -103,7 +81,7 @@
             <p class="text-blue-500">
               <span class="text-black">I am</span> Jade Danial
             </p>
-            <p class="text-lg lg:text-2xl font-light pt-4">
+            <p class="text-lg lg:text-2xl font-light">
               Full Stack Web Developer
             </p>
             <ul
@@ -153,11 +131,7 @@
       const p = document.querySelector("#p");
       const p_lg_link = document.querySelector("#p_lg_link");
       const p1_lg_link = document.querySelector("#p1_lg_link");
-      const p2_lg_link = document.querySelector("#p2_lg_link");
-      const p3_lg_link = document.querySelector("#p3_lg_link");
       const p1_sm_link = document.querySelector("#p1_sm_link");
-      const p2_sm_link = document.querySelector("#p2_sm_link");
-      const p3_sm_link = document.querySelector("#p3_sm_link");
       const faSolid = document.querySelector(".fa-solid");
 
       p_lg_link.addEventListener("click", () => {
@@ -169,7 +143,7 @@
         faSolid.classList.toggle("fa-xmark");
       });
 
-      [p1_sm_link, p2_sm_link, p3_sm_link].forEach((link) => {
+      [p1_sm_link].forEach((link) => {
         link.addEventListener("click", () => {
           menu.classList.toggle("hidden");
           faSolid.classList.toggle("fa-xmark");
