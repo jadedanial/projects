@@ -275,6 +275,8 @@
       [p1_sm_link].forEach((link) => {
         link.addEventListener("click", () => {
           menu.classList.toggle("hidden");
+          home.classList.toggle("hidden");
+          p1.classList.toggle("hidden");
           faSolid.classList.toggle("fa-xmark");
         });
       });
