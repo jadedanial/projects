@@ -564,10 +564,6 @@ video {
   height: 14rem;
 }
 
-.max-h-24{
-  max-height: 6rem;
-}
-
 .min-h-\[calc\(100vh-7\.5rem\)\]{
   min-height: calc(100vh - 7.5rem);
 }
@@ -582,10 +578,6 @@ video {
 
 .w-56{
   width: 14rem;
-}
-
-.min-w-full{
-  min-width: 100%;
 }
 
 .transform{
