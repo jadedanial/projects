@@ -1159,8 +1159,8 @@ video {
     left: 39%;
   }
 
-  .lg\:top-\[13\%\]{
-    top: 13%;
+  .lg\:top-\[12\%\]{
+    top: 12%;
   }
 
   .lg\:top-\[18\%\]{
@@ -1175,8 +1175,8 @@ video {
     top: 58%;
   }
 
-  .lg\:top-\[77\%\]{
-    top: 77%;
+  .lg\:top-\[76\%\]{
+    top: 76%;
   }
 
   .lg\:flex{
@@ -1259,6 +1259,10 @@ video {
     gap: 2.5rem;
   }
 
+  .lg\:gap-4{
+    gap: 1rem;
+  }
+
   .lg\:px-20{
     padding-left: 5rem;
     padding-right: 5rem;
@@ -1281,12 +1285,20 @@ video {
     line-height: 2rem;
   }
 
+  .lg\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
+
   .lg\:text-6xl{
     font-size: 3.75rem;
     line-height: 1;
   }
+}
 
-  .lg\:text-\[3\.5rem\]{
-    font-size: 3.5rem;
+@media (min-width: 1280px){
+  .xl\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
   }
 }
