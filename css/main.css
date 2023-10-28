@@ -942,6 +942,80 @@ video {
   text-decoration-line: underline;
 }
 
+@media (min-width: 640px){
+  .sm\:bottom-\[48\%\]{
+    bottom: 48%;
+  }
+
+  .sm\:left-\[14\%\]{
+    left: 14%;
+  }
+
+  .sm\:left-\[2\%\]{
+    left: 2%;
+  }
+
+  .sm\:left-\[30\%\]{
+    left: 30%;
+  }
+
+  .sm\:left-\[46\%\]{
+    left: 46%;
+  }
+
+  .sm\:left-\[74\%\]{
+    left: 74%;
+  }
+
+  .sm\:left-\[75\%\]{
+    left: 75%;
+  }
+
+  .sm\:top-\[13\%\]{
+    top: 13%;
+  }
+
+  .sm\:top-\[14\%\]{
+    top: 14%;
+  }
+
+  .sm\:top-\[33\%\]{
+    top: 33%;
+  }
+
+  .sm\:top-\[51\%\]{
+    top: 51%;
+  }
+
+  .sm\:top-\[8\%\]{
+    top: 8%;
+  }
+
+  .sm\:w-\[12\%\]{
+    width: 12%;
+  }
+
+  .sm\:w-\[16\%\]{
+    width: 16%;
+  }
+
+  .sm\:w-\[18\%\]{
+    width: 18%;
+  }
+
+  .sm\:w-\[20\%\]{
+    width: 20%;
+  }
+
+  .sm\:w-\[21\%\]{
+    width: 21%;
+  }
+
+  .sm\:w-\[23\%\]{
+    width: 23%;
+  }
+}
+
 @media (min-width: 768px){
   .md\:bottom-\[57\%\]{
     bottom: 57%;
