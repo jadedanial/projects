@@ -942,6 +942,84 @@ video {
   text-decoration-line: underline;
 }
 
+@media (min-width: 768px){
+  .md\:bottom-\[57\%\]{
+    bottom: 57%;
+  }
+
+  .md\:left-\[22\%\]{
+    left: 22%;
+  }
+
+  .md\:left-\[25\%\]{
+    left: 25%;
+  }
+
+  .md\:left-\[37\%\]{
+    left: 37%;
+  }
+
+  .md\:left-\[45\%\]{
+    left: 45%;
+  }
+
+  .md\:left-\[62\%\]{
+    left: 62%;
+  }
+
+  .md\:left-\[65\%\]{
+    left: 65%;
+  }
+
+  .md\:top-\[11\%\]{
+    top: 11%;
+  }
+
+  .md\:top-\[26\%\]{
+    top: 26%;
+  }
+
+  .md\:top-\[39\%\]{
+    top: 39%;
+  }
+
+  .md\:top-\[4\%\]{
+    top: 4%;
+  }
+
+  .md\:w-\[10\%\]{
+    width: 10%;
+  }
+
+  .md\:w-\[12\%\]{
+    width: 12%;
+  }
+
+  .md\:w-\[13\%\]{
+    width: 13%;
+  }
+
+  .md\:w-\[14\%\]{
+    width: 14%;
+  }
+
+  .md\:w-\[16\%\]{
+    width: 16%;
+  }
+
+  .md\:w-\[18\%\]{
+    width: 18%;
+  }
+
+  .md\:pt-0{
+    padding-top: 0px;
+  }
+
+  .md\:pt-64{
+    padding-top: 16rem;
+  }
+}
+
 @media (min-width: 1024px){
   .lg\:absolute{
     position: absolute;
