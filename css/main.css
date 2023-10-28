@@ -544,6 +544,10 @@ video {
   inset: 0px;
 }
 
+.bottom-0{
+  bottom: 0px;
+}
+
 .bottom-\[48\%\]{
   bottom: 48%;
 }
@@ -618,6 +622,10 @@ video {
 
 .h-20{
   height: 5rem;
+}
+
+.h-40{
+  height: 10rem;
 }
 
 .h-56{
@@ -696,6 +704,10 @@ video {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.flex-col{
+  flex-direction: column;
+}
+
 .place-items-center{
   place-items: center;
 }
@@ -750,6 +762,10 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+
+.overflow-hidden{
+  overflow: hidden;
 }
 
 .rounded-\[50\%\]{
@@ -1235,8 +1251,8 @@ video {
     grid-template-columns: 30% 67%;
   }
 
-  .lg\:grid-cols-\[50\%_50\%\]{
-    grid-template-columns: 50% 50%;
+  .lg\:grid-cols-\[50\%_45\%\]{
+    grid-template-columns: 50% 45%;
   }
 
   .lg\:justify-start{
