@@ -394,6 +394,7 @@
       </div>
     </main>
     <footer
+      id="footer"
       class="flex flex-col justify-center items-center h-40 overflow-hidden bottom-0 drop-shadow-2xl"
     >
       <a
@@ -411,6 +412,7 @@
       const menu = document.querySelector("#menu");
       const home = document.querySelector("#home");
       const projects = document.querySelector("#projects");
+      const footer = document.querySelector("#footer");
       const p1_sm_link = document.querySelector("#p1_sm_link");
       const faSolid = document.querySelector(".fa-solid");
 
@@ -418,6 +420,7 @@
         menu.classList.toggle("hidden");
         home.classList.toggle("hidden");
         projects.classList.toggle("hidden");
+        footer.classList.toggle("hidden");
         faSolid.classList.toggle("fa-xmark");
       });
 
@@ -426,6 +429,7 @@
           menu.classList.toggle("hidden");
           home.classList.toggle("hidden");
           projects.classList.toggle("hidden");
+          footer.classList.toggle("hidden");
           faSolid.classList.toggle("fa-xmark");
         });
       });
