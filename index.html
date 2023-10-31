@@ -34,7 +34,7 @@
         <div>
           <a
             class="hidden lg:flex items-center text-xl transform transition duration-500 text-blue-500 hover:scale-90 drop-shadow-lg"
-            href="#p1"
+            href="#p_ams"
             role="button"
             >Asset Maintenance System</a
           >
@@ -50,9 +50,9 @@
           <ul class="grid place-items-center pt-32 space-y-8">
             <li>
               <a
-                id="p1_sm_link"
+                id="ams_sm_link"
                 class="flex items-center text-xl transform transition duration-500 text-blue-500 hover:scale-90 drop-shadow-lg"
-                href="#p1"
+                href="#p_ams"
                 role="button"
                 >Asset Maintenance System</a
               >
@@ -202,7 +202,7 @@
               >
                 <a
                   id="cv"
-                  class="flex text-sm justify-center items-center h-8 w-32 border-blue-500 text-blue-500 font-semibold hover:bg-blue-700 hover:text-white border-2 rounded-full"
+                  class="flex text-sm justify-center items-center h-10 w-32 border-blue-500 text-blue-500 font-semibold hover:bg-blue-700 hover:text-white border-2 hover:border-blue-700 rounded-full"
                   href="https://drive.google.com/file/d/11XI76cVk92xfhcvwjZ7JDyOwLQjKg_uX/view?usp=sharing"
                   role="button"
                 >
@@ -246,7 +246,7 @@
         >
           <p id="project_title">Projects I am working on</p>
         </div>
-        <div id="p1"></div>
+        <div id="p_ams"></div>
         <div id="ams" class="grid gap-6 justify-items-center drop-shadow-lg">
           <img
             class="h-20"
@@ -256,19 +256,50 @@
           <p class="text-2xl text-blue-500 font-bold">
             Asset Maintenance System
           </p>
-          <p class="text-base w-4/5 lg:w-2/5">
+          <p class="text-lg w-4/5 lg:w-3/5">
             A system designed to optimize the asset's performance by ensuring
             all assets are well maintained.
           </p>
+        </div>
+        <div id="ams_features">
+          <ul class="flex justify-center items-center space-x-8 drop-shadow-lg">
+            <button
+              type="button"
+              class="flex text-sm justify-center items-center h-10 w-32 border-blue-500 text-blue-500 font-semibold hover:bg-blue-700 hover:text-white border-[1px] hover:border-blue-700 rounded-full"
+            >
+              Asset
+            </button>
+            <button
+              type="button"
+              class="flex text-sm justify-center items-center h-10 w-32 border-blue-500 text-blue-500 font-semibold hover:bg-blue-700 hover:text-white border-[1px] hover:border-blue-700 rounded-full"
+            >
+              Work Order
+            </button>
+            <button
+              type="button"
+              class="flex text-sm justify-center items-center h-10 w-32 border-blue-500 text-blue-500 font-semibold hover:bg-blue-700 hover:text-white border-[1px] hover:border-blue-700 rounded-full"
+            >
+              Inventory
+            </button>
+            <button
+              type="button"
+              class="flex text-sm justify-center items-center h-10 w-32 border-blue-500 text-blue-500 font-semibold hover:bg-blue-700 hover:text-white border-[1px] hover:border-blue-700 rounded-full"
+            >
+              Employee
+            </button>
+            <button
+              type="button"
+              class="flex text-sm justify-center items-center h-10 w-32 border-blue-500 text-blue-500 font-semibold hover:bg-blue-700 hover:text-white border-[1px] hover:border-blue-700 rounded-full"
+            >
+              Reporting
+            </button>
+          </ul>
         </div>
         <div
           id="ams_description"
           class="grid gap-20 lg:gap-10 lg:grid-cols-[30%_67%]"
         >
           <div class="grid gap-12 lg:text-left">
-            <div>
-              <p class="text-xl text-blue-500 font-semibold">System Features</p>
-            </div>
             <div class="grid gap-4">
               <div
                 class="grid gap-4 justify-items-center lg:grid-cols-[12%_88%] lg:justify-items-start drop-shadow-lg"
@@ -284,7 +315,7 @@
                 </div>
               </div>
               <div class="grid justify-items-center lg:justify-items-start">
-                <p class="text-base w-4/5 lg:w-auto">
+                <p class="text-2xl w-4/5 lg:w-auto">
                   Allows the user to create and update asset information,
                   control, and organize assets to optimize operations.
                 </p>
@@ -305,7 +336,7 @@
                 </div>
               </div>
               <div class="grid justify-items-center lg:justify-items-start">
-                <p class="text-base w-4/5 lg:w-auto">
+                <p class="text-2xl w-4/5 lg:w-auto">
                   Enables the user to schedule and track different types of
                   maintenance tasks such as corrective and preventive.
                 </p>
@@ -326,7 +357,7 @@
                 </div>
               </div>
               <div class="grid justify-items-center lg:justify-items-start">
-                <p class="text-base w-4/5 lg:w-auto">
+                <p class="text-2xl w-4/5 lg:w-auto">
                   Provides a complete and integrated inventory management module
                   that ensures the availability of spare parts needed for the
                   maintenance.
@@ -348,7 +379,7 @@
                 </div>
               </div>
               <div class="grid justify-items-center lg:justify-items-start">
-                <p class="text-base w-4/5 lg:w-auto">
+                <p class="text-2xl w-4/5 lg:w-auto">
                   Helps improve daily productivity by monitoring the number of
                   available employees for operation and managing their
                   information, vacations, attendances, and absences.
@@ -370,7 +401,7 @@
                 </div>
               </div>
               <div class="grid justify-items-center lg:justify-items-start">
-                <p class="text-base w-4/5 lg:w-auto">
+                <p class="text-2xl w-4/5 lg:w-auto">
                   Generates reports to monitor various aspects of the operation
                   such as work order status, employee productivity, spare part
                   consumption, out-of-service assets, and road call assets.
@@ -413,7 +444,7 @@
       const home = document.querySelector("#home");
       const projects = document.querySelector("#projects");
       const footer = document.querySelector("#footer");
-      const p1_sm_link = document.querySelector("#p1_sm_link");
+      const ams_sm_link = document.querySelector("#ams_sm_link");
       const faSolid = document.querySelector(".fa-solid");
 
       hamburger.addEventListener("click", () => {
@@ -424,7 +455,7 @@
         faSolid.classList.toggle("fa-xmark");
       });
 
-      [p1_sm_link].forEach((link) => {
+      [ams_sm_link].forEach((link) => {
         link.addEventListener("click", () => {
           menu.classList.toggle("hidden");
           home.classList.toggle("hidden");
@@ -457,7 +488,8 @@
       ScrollReveal().reveal("#linkedin", { delay: 450, origin: "right" });
       ScrollReveal().reveal("#project_title", { delay: 200, origin: "top" });
       ScrollReveal().reveal("#ams", { delay: 400, origin: "top" });
-      ScrollReveal().reveal("#ams_description", { delay: 600, origin: "top" });
+      ScrollReveal().reveal("#ams_features", { delay: 600, origin: "top" });
+      ScrollReveal().reveal("#ams_description", { delay: 800, origin: "top" });
     </script>
   </body>
 </html>
