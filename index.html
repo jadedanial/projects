@@ -239,15 +239,18 @@
       </div>
       <div
         id="projects"
-        class="min-h-screen grid grid-cols-1 gap-20 place-items-center content-center text-center py-48 lg:px-20"
+        class="min-h-screen flex flex-col place-items-center text-center py-48 space-y-12 px-10 lg:px-20"
       >
         <div
-          class="w-3/4 text-4xl sm:text-6xl md:text-6xl lg:text-6xl font-extrabold drop-shadow-lg"
+          class="w-3/4 text-4xl sm:text-6xl md:text-6xl lg:text-6xl font-extrabold pt-48 pb-24 drop-shadow-lg"
         >
           <p id="project_title">Projects I am working on</p>
         </div>
         <div id="p_ams"></div>
-        <div id="ams" class="grid gap-6 justify-items-center drop-shadow-lg">
+        <div
+          id="ams"
+          class="flex flex-col place-items-center space-y-6 drop-shadow-lg"
+        >
           <img
             class="h-20"
             src="https://raw.githubusercontent.com/jadedanial/asset-maintenance-system/main/frontend/ams/public/images/ams.png"
@@ -261,8 +264,8 @@
             all assets are well maintained.
           </p>
         </div>
-        <div id="ams_features">
-          <ul class="flex justify-center items-center space-x-8 drop-shadow-lg">
+        <div id="ams_features" class="pb-12">
+          <ul class="flex flex-row space-x-8 drop-shadow-lg">
             <button
               type="button"
               class="flex text-sm justify-center items-center h-10 w-32 border-blue-500 text-blue-500 font-semibold hover:bg-blue-700 hover:text-white border-[1px] hover:border-blue-700 rounded-full"
@@ -295,33 +298,23 @@
             </button>
           </ul>
         </div>
-        <div
-          id="ams_description"
-          class="grid gap-20 lg:gap-10 lg:grid-cols-[30%_67%]"
-        >
-          <div class="grid gap-12 lg:text-left">
-            <div class="grid gap-4">
-              <div
-                class="grid gap-4 justify-items-center lg:grid-cols-[12%_88%] lg:justify-items-start drop-shadow-lg"
-              >
-                <div>
-                  <i
-                    class="fa-solid fa-gears text-4xl"
-                    style="color: #7c8ef6"
-                  ></i>
-                </div>
-                <div>
-                  <p class="text-xl text-blue-500">Asset Management</p>
-                </div>
+        <div id="ams_description" class="grid gap-16 lg:grid-cols-[30%_65%]">
+          <div class="lg:text-left">
+            <div id="asset" class="space-y-8">
+              <div class="hidden lg:block lg:absolute right-[70%] bottom-0">
+                <i class="fa-solid fa-gears text-[200px] text-blue-200"></i>
               </div>
-              <div class="grid justify-items-center lg:justify-items-start">
-                <p class="text-2xl w-4/5 lg:w-auto">
-                  Allows the user to create and update asset information,
-                  control, and organize assets to optimize operations.
-                </p>
+              <div class="text-xl drop-shadow-lg">
+                <div>
+                  <p class="text-blue-500 pb-8">Asset Management</p>
+                  <p>
+                    Allows the user to create and update asset information,
+                    control, and organize assets to optimize operations.
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="grid gap-4">
+            <div id="workorder" class="hidden gap-4">
               <div
                 class="grid gap-4 justify-items-center lg:grid-cols-[12%_88%] lg:justify-items-start drop-shadow-lg"
               >
@@ -342,7 +335,7 @@
                 </p>
               </div>
             </div>
-            <div class="grid gap-4">
+            <div id="inventory" class="hidden gap-4">
               <div
                 class="grid gap-4 justify-items-center lg:grid-cols-[12%_88%] lg:justify-items-start drop-shadow-lg"
               >
@@ -364,7 +357,7 @@
                 </p>
               </div>
             </div>
-            <div class="grid gap-4">
+            <div id="employee" class="hidden gap-4">
               <div
                 class="grid gap-4 justify-items-center lg:grid-cols-[12%_88%] lg:justify-items-start drop-shadow-lg"
               >
@@ -386,7 +379,7 @@
                 </p>
               </div>
             </div>
-            <div class="grid gap-4">
+            <div id="reporting" class="hidden gap-4">
               <div
                 class="grid gap-4 justify-items-center lg:grid-cols-[12%_88%] lg:justify-items-start drop-shadow-lg"
               >
@@ -409,14 +402,16 @@
               </div>
             </div>
           </div>
-          <div class="grid gap-12 justify-items-center lg:justify-items-end">
+          <div class="grid justify-items-center lg:justify-items-end">
             <img
-              class="w-4/5 lg:w-11/12 drop-shadow-2xl"
+              id="asset_image"
+              class="w-full drop-shadow-2xl"
               src="https://raw.githubusercontent.com/jadedanial/asset-maintenance-system/main/ui1.png"
               alt="image"
             />
             <img
-              class="w-4/5 lg:w-11/12 drop-shadow-2xl"
+              id="workorder_image"
+              class="hidden w-4/5 lg:w-11/12 drop-shadow-2xl"
               src="https://raw.githubusercontent.com/jadedanial/asset-maintenance-system/main/ui2.png"
               alt="image"
             />
