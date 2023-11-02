@@ -97,7 +97,7 @@
             </div>
             <div
               id="reactjs"
-              class="flex justify-center items-center w-[12%] sm:w-[10%] md:w-[10%] lg:w-[5%] absolute top-[8%] left-[46%] sm:top-[15%] sm:left-[44%] md:top-[14%] md:left-[45%] lg:top-[12%] lg:left-[27%] rounded-[50%] bg-blue-400 drop-shadow-lg"
+              class="flex justify-center items-center w-[12%] sm:w-[10%] md:w-[10%] lg:w-[5%] absolute top-[8%] left-[46%] sm:top-[15%] sm:left-[44%] md:top-[14%] md:left-[45%] lg:top-[8%] lg:left-[27%] rounded-[50%] bg-blue-400 drop-shadow-lg"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -183,7 +183,7 @@
             </div>
           </div>
           <div
-            class="text-4xl sm:text-6xl md:text-6xl lg:text-5xl xl:text-6xl flex justify-center pt-28 sm:pt-64 md:pt-64 lg:pt-0 lg:justify-start"
+            class="text-4xl sm:text-6xl md:text-6xl lg:text-5xl xl:text-6xl pt-28 sm:pt-64 md:pt-64 lg:pt-0 px-10 lg:px-0"
           >
             <div>
               <div class="font-extrabold">
@@ -267,7 +267,7 @@
           >
             <a
               id="ams_asset_button"
-              class="ams_button hover:text-blue-700"
+              class="ams_button text-blue-700 hover:text-blue-700"
               role="button"
               onclick="selectFeature('ams_asset_desc')"
               ><i class="fa-solid fa-gears"></i
@@ -477,7 +477,6 @@
         var ams_asset_desc = document.getElementById("ams_asset_desc");
         toggleFeatureVisibility([ams_asset_desc], "visible", 1);
         ams_asset_desc.style.transition = "opacity 3s";
-        ams_asset_desc.classList.add("text-blue-700");
       }
 
       function selectFeature(feat) {
