@@ -16,7 +16,7 @@
   </head>
   <body
     onload="showFeature()"
-    class="min-h-screen font-raleway bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-white via-blue-50 to-blue-100 text-black"
+    class="min-h-screen font-raleway text-left bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-white via-blue-50 to-blue-100 text-black"
   >
     <header class="flex justify-center">
       <nav
@@ -183,7 +183,7 @@
             </div>
           </div>
           <div
-            class="text-4xl sm:text-6xl md:text-6xl lg:text-5xl xl:text-6xl text-center lg:text-left flex justify-center pt-28 sm:pt-64 md:pt-64 lg:pt-0 lg:justify-start"
+            class="text-4xl sm:text-6xl md:text-6xl lg:text-5xl xl:text-6xl flex justify-center pt-28 sm:pt-64 md:pt-64 lg:pt-0 lg:justify-start"
           >
             <div>
               <div class="font-extrabold">
@@ -232,17 +232,17 @@
       </div>
       <div
         id="projects"
-        class="min-h-screen flex flex-col place-items-center text-center py-48 space-y-12 px-10 lg:px-20"
+        class="min-h-screen flex flex-col py-48 space-y-12 px-10 lg:px-20"
       >
         <div
-          class="w-3/4 text-4xl sm:text-6xl md:text-6xl lg:text-6xl font-extrabold drop-shadow-lg"
+          class="text-4xl sm:text-8xl md:text-6xl lg:text-6xl font-extrabold drop-shadow-lg"
         >
           <p id="project_title">Projects I am working on</p>
         </div>
         <div id="p_ams"></div>
         <div
           id="ams"
-          class="flex flex-col lg:flex-row items-center space-x-6 space-y-4 lg:px-52 lg:space-y-0"
+          class="flex flex-col lg:flex-row items-start lg:items-center space-y-4"
         >
           <div>
             <img
@@ -251,7 +251,7 @@
               alt="image"
             />
           </div>
-          <div class="text-center lg:text-left">
+          <div>
             <p class="text-xl lg:text-2xl text-blue-500 font-bold">
               Asset Maintenance System
             </p>
@@ -263,7 +263,7 @@
         </div>
         <div id="ams_features" class="pb-12">
           <ul
-            class="flex justify-between text-blue-400 space-x-6 text-3xl lg:text-4xl lg:space-x-28 drop-shadow-lg"
+            class="flex text-blue-400 space-x-6 text-3xl lg:text-4xl lg:space-x-14 drop-shadow-lg"
           >
             <a
               id="ams_asset_button"
@@ -307,7 +307,7 @@
             id="ams_asset_desc"
             class="ams_feature grid gap-16 lg:grid-cols-[30%_65%] absolute top-0 drop-shadow-lg"
           >
-            <div class="lg:text-left">
+            <div>
               <p class="text-xl text-blue-500 pb-8">Asset Management</p>
               <p class="text-lg text-black">
                 Allows the user to create and update asset information, control,
@@ -325,7 +325,7 @@
             id="ams_workorder_desc"
             class="ams_feature grid gap-16 lg:grid-cols-[30%_65%] absolute top-0 drop-shadow-lg"
           >
-            <div class="lg:text-left">
+            <div>
               <p class="text-xl text-blue-500 pb-8">Work Order Management</p>
               <p class="text-lg text-black">
                 Allows the user to create and update asset information, control,
@@ -343,7 +343,7 @@
             id="ams_inventory_desc"
             class="ams_feature grid gap-16 lg:grid-cols-[30%_65%] absolute top-0 drop-shadow-lg"
           >
-            <div class="lg:text-left">
+            <div>
               <p class="text-xl text-blue-500 pb-8">Inventory Management</p>
               <p class="text-lg text-black">
                 Allows the user to create and update asset information, control,
@@ -361,7 +361,7 @@
             id="ams_employee_desc"
             class="ams_feature grid gap-16 lg:grid-cols-[30%_65%] absolute top-0 drop-shadow-lg"
           >
-            <div class="lg:text-left">
+            <div>
               <p class="text-xl text-blue-500 pb-8">Employee Management</p>
               <p class="text-lg text-black">
                 Allows the user to create and update asset information, control,
@@ -379,7 +379,7 @@
             id="ams_report_desc"
             class="ams_feature grid gap-16 lg:grid-cols-[30%_65%] top-0 drop-shadow-lg"
           >
-            <div class="lg:text-left">
+            <div>
               <p class="text-xl text-blue-500 pb-8">Report</p>
               <p class="text-lg text-black">
                 Allows the user to create and update asset information, control,
@@ -398,7 +398,7 @@
     </main>
     <footer
       id="footer"
-      class="flex flex-col justify-center items-center h-40 overflow-hidden bottom-0 drop-shadow-2xl"
+      class="flex flex-col justify-end items-center h-40 overflow-hidden pb-6 drop-shadow-2xl"
     >
       <a
         class="font-extrabold text-lg hover:underline drop-shadow-lg"

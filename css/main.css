@@ -548,10 +548,6 @@ video {
   inset: 0px;
 }
 
-.bottom-0{
-  bottom: 0px;
-}
-
 .bottom-\[48\%\]{
   bottom: 48%;
 }
@@ -652,10 +648,6 @@ video {
   width: 83.333333%;
 }
 
-.w-3\/4{
-  width: 75%;
-}
-
 .w-32{
   width: 8rem;
 }
@@ -712,8 +704,16 @@ video {
   align-content: center;
 }
 
+.items-start{
+  align-items: flex-start;
+}
+
 .items-center{
   align-items: center;
+}
+
+.justify-end{
+  justify-content: flex-end;
 }
 
 .justify-center{
@@ -837,6 +837,10 @@ video {
   padding-bottom: 3rem;
 }
 
+.pb-6{
+  padding-bottom: 1.5rem;
+}
+
 .pb-8{
   padding-bottom: 2rem;
 }
@@ -853,8 +857,8 @@ video {
   padding-top: 8rem;
 }
 
-.text-center{
-  text-align: center;
+.text-left{
+  text-align: left;
 }
 
 .font-raleway{
@@ -1070,6 +1074,11 @@ video {
     font-size: 3.75rem;
     line-height: 1;
   }
+
+  .sm\:text-8xl{
+    font-size: 6rem;
+    line-height: 1;
+  }
 }
 
 @media (min-width: 768px){
@@ -1269,6 +1278,10 @@ video {
     flex-direction: row;
   }
 
+  .lg\:items-center{
+    align-items: center;
+  }
+
   .lg\:justify-start{
     justify-content: flex-start;
   }
@@ -1281,26 +1294,15 @@ video {
     gap: 1rem;
   }
 
-  .lg\:space-x-28 > :not([hidden]) ~ :not([hidden]){
+  .lg\:space-x-14 > :not([hidden]) ~ :not([hidden]){
     --tw-space-x-reverse: 0;
-    margin-right: calc(7rem * var(--tw-space-x-reverse));
-    margin-left: calc(7rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .lg\:space-y-0 > :not([hidden]) ~ :not([hidden]){
-    --tw-space-y-reverse: 0;
-    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(0px * var(--tw-space-y-reverse));
+    margin-right: calc(3.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(3.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .lg\:px-20{
     padding-left: 5rem;
     padding-right: 5rem;
-  }
-
-  .lg\:px-52{
-    padding-left: 13rem;
-    padding-right: 13rem;
   }
 
   .lg\:pt-0{
@@ -1309,10 +1311,6 @@ video {
 
   .lg\:pt-8{
     padding-top: 2rem;
-  }
-
-  .lg\:text-left{
-    text-align: left;
   }
 
   .lg\:text-2xl{
