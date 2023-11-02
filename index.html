@@ -15,6 +15,7 @@
     <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body
+    onload="showFeature()"
     class="min-h-screen font-raleway bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-white via-blue-50 to-blue-100 text-black"
   >
     <header class="flex justify-center">
@@ -202,7 +203,7 @@
               >
                 <a
                   id="cv"
-                  class="flex text-sm justify-center items-center h-10 w-32 border-blue-500 text-blue-500 font-semibold hover:bg-blue-700 hover:text-white border-2 hover:border-blue-700 rounded-full"
+                  class="flex text-sm justify-center items-center h-10 w-32 border-blue-500 text-blue-500 hover:bg-blue-700 hover:text-white border-2 hover:border-blue-700 rounded-full"
                   href="https://drive.google.com/file/d/11XI76cVk92xfhcvwjZ7JDyOwLQjKg_uX/view?usp=sharing"
                   role="button"
                 >
@@ -210,27 +211,19 @@
                 </a>
                 <a
                   id="github"
-                  class="text-3xl text-blue-500"
+                  class="text-3xl text-blue-500 hover:text-blue-700"
                   href="https://github.com/jadedanial"
                   role="button"
                 >
-                  <i
-                    class="fa-brands fa-github"
-                    onMouseOver="this.style.color='#1737ee'"
-                    onMouseOut="this.style.color='#2196f3'"
-                  ></i>
+                  <i class="fa-brands fa-github"></i>
                 </a>
                 <a
                   id="linkedin"
-                  class="text-3xl text-blue-500"
+                  class="text-3xl text-blue-500 hover:text-blue-700"
                   href="https://www.linkedin.com/in/jadedanial/"
                   role="button"
                 >
-                  <i
-                    class="fa-brands fa-linkedin-in"
-                    onMouseOver="this.style.color='#1737ee'"
-                    onMouseOut="this.style.color='#2196f3'"
-                  ></i>
+                  <i class="fa-brands fa-linkedin-in"></i>
                 </a>
               </ul>
             </div>
@@ -249,172 +242,156 @@
         <div id="p_ams"></div>
         <div
           id="ams"
-          class="flex flex-col place-items-center space-y-6 drop-shadow-lg"
+          class="flex flex-col lg:flex-row items-center space-x-6 space-y-4 lg:px-52 lg:space-y-0"
         >
-          <img
-            class="h-20"
-            src="https://raw.githubusercontent.com/jadedanial/asset-maintenance-system/main/frontend/ams/public/images/ams.png"
-            alt="image"
-          />
-          <p class="text-2xl text-blue-500 font-bold">
-            Asset Maintenance System
-          </p>
-          <p class="text-lg w-4/5 lg:w-3/5">
-            A system designed to optimize the asset's performance by ensuring
-            all assets are well maintained.
-          </p>
+          <div>
+            <img
+              class="w-32 lg:w-48"
+              src="https://raw.githubusercontent.com/jadedanial/asset-maintenance-system/main/frontend/ams/public/images/ams.png"
+              alt="image"
+            />
+          </div>
+          <div class="text-center lg:text-left">
+            <p class="text-2xl text-blue-500 font-bold">
+              Asset Maintenance System
+            </p>
+            <p class="text-lg">
+              A system designed to optimize the asset's performance by ensuring
+              all assets are well maintained.
+            </p>
+          </div>
         </div>
         <div id="ams_features" class="pb-12">
-          <ul class="flex flex-row space-x-8 drop-shadow-lg">
-            <button
-              type="button"
-              class="flex text-sm justify-center items-center h-10 w-32 border-blue-500 text-blue-500 font-semibold hover:bg-blue-700 hover:text-white border-[1px] hover:border-blue-700 rounded-full"
-            >
-              Asset
-            </button>
-            <button
-              type="button"
-              class="flex text-sm justify-center items-center h-10 w-32 border-blue-500 text-blue-500 font-semibold hover:bg-blue-700 hover:text-white border-[1px] hover:border-blue-700 rounded-full"
-            >
-              Work Order
-            </button>
-            <button
-              type="button"
-              class="flex text-sm justify-center items-center h-10 w-32 border-blue-500 text-blue-500 font-semibold hover:bg-blue-700 hover:text-white border-[1px] hover:border-blue-700 rounded-full"
-            >
-              Inventory
-            </button>
-            <button
-              type="button"
-              class="flex text-sm justify-center items-center h-10 w-32 border-blue-500 text-blue-500 font-semibold hover:bg-blue-700 hover:text-white border-[1px] hover:border-blue-700 rounded-full"
-            >
-              Employee
-            </button>
-            <button
-              type="button"
-              class="flex text-sm justify-center items-center h-10 w-32 border-blue-500 text-blue-500 font-semibold hover:bg-blue-700 hover:text-white border-[1px] hover:border-blue-700 rounded-full"
-            >
-              Reporting
-            </button>
+          <ul
+            class="flex justify-between text-blue-400 space-x-6 text-3xl lg:text-4xl lg:space-x-28 drop-shadow-lg"
+          >
+            <a
+              id="ams_asset_button"
+              class="ams_button hover:text-blue-700"
+              role="button"
+              onclick="selectFeature('ams_asset_desc')"
+              ><i class="fa-solid fa-gears"></i
+            ></a>
+            <a
+              id="ams_workorder_button"
+              class="ams_button hover:text-blue-700"
+              role="button"
+              onclick="selectFeature('ams_workorder_desc')"
+              ><i class="fa-solid fa-person-digging"></i
+            ></a>
+            <a
+              id="ams_inventory_button"
+              class="ams_button hover:text-blue-700"
+              role="button"
+              onclick="selectFeature('ams_inventory_desc')"
+              ><i class="fa-solid fa-cart-flatbed"></i
+            ></a>
+            <a
+              id="ams_employee_button"
+              class="ams_button hover:text-blue-700"
+              role="button"
+              onclick="selectFeature('ams_employee_desc')"
+              ><i class="fa-solid fa-users-gear"></i
+            ></a>
+            <a
+              id="ams_report_button"
+              class="ams_button hover:text-blue-700"
+              role="button"
+              onclick="selectFeature('ams_report_desc')"
+              ><i class="fa-solid fa-table"></i
+            ></a>
           </ul>
         </div>
-        <div id="ams_description" class="grid gap-16 lg:grid-cols-[30%_65%]">
-          <div class="lg:text-left">
-            <div id="asset" class="space-y-8">
-              <div class="hidden lg:block lg:absolute right-[70%] bottom-0">
-                <i class="fa-solid fa-gears text-[200px] text-blue-200"></i>
-              </div>
-              <div class="text-xl drop-shadow-lg">
-                <div>
-                  <p class="text-blue-500 pb-8">Asset Management</p>
-                  <p>
-                    Allows the user to create and update asset information,
-                    control, and organize assets to optimize operations.
-                  </p>
-                </div>
-              </div>
+        <div id="ams_description">
+          <div
+            id="ams_asset_desc"
+            class="ams_feature grid gap-16 lg:grid-cols-[30%_65%] absolute top-0 drop-shadow-lg"
+          >
+            <div class="lg:text-left">
+              <p class="text-xl text-blue-500 pb-8">Asset Management</p>
+              <p class="text-lg text-black">
+                Allows the user to create and update asset information, control,
+                and organize assets to optimize operations.
+              </p>
             </div>
-            <div id="workorder" class="hidden gap-4">
-              <div
-                class="grid gap-4 justify-items-center lg:grid-cols-[12%_88%] lg:justify-items-start drop-shadow-lg"
-              >
-                <div>
-                  <i
-                    class="fa-solid fa-person-digging text-4xl"
-                    style="color: #7c8ef6"
-                  ></i>
-                </div>
-                <div>
-                  <p class="text-xl text-blue-500">Work Order Management</p>
-                </div>
-              </div>
-              <div class="grid justify-items-center lg:justify-items-start">
-                <p class="text-2xl w-4/5 lg:w-auto">
-                  Enables the user to schedule and track different types of
-                  maintenance tasks such as corrective and preventive.
-                </p>
-              </div>
-            </div>
-            <div id="inventory" class="hidden gap-4">
-              <div
-                class="grid gap-4 justify-items-center lg:grid-cols-[12%_88%] lg:justify-items-start drop-shadow-lg"
-              >
-                <div>
-                  <i
-                    class="fa-solid fa-cart-flatbed text-4xl"
-                    style="color: #7c8ef6"
-                  ></i>
-                </div>
-                <div>
-                  <p class="text-xl text-blue-500">Inventory Management</p>
-                </div>
-              </div>
-              <div class="grid justify-items-center lg:justify-items-start">
-                <p class="text-2xl w-4/5 lg:w-auto">
-                  Provides a complete and integrated inventory management module
-                  that ensures the availability of spare parts needed for the
-                  maintenance.
-                </p>
-              </div>
-            </div>
-            <div id="employee" class="hidden gap-4">
-              <div
-                class="grid gap-4 justify-items-center lg:grid-cols-[12%_88%] lg:justify-items-start drop-shadow-lg"
-              >
-                <div>
-                  <i
-                    class="fa-solid fa-users-gear text-4xl"
-                    style="color: #7c8ef6"
-                  ></i>
-                </div>
-                <div>
-                  <p class="text-xl text-blue-500">Employee Management</p>
-                </div>
-              </div>
-              <div class="grid justify-items-center lg:justify-items-start">
-                <p class="text-2xl w-4/5 lg:w-auto">
-                  Helps improve daily productivity by monitoring the number of
-                  available employees for operation and managing their
-                  information, vacations, attendances, and absences.
-                </p>
-              </div>
-            </div>
-            <div id="reporting" class="hidden gap-4">
-              <div
-                class="grid gap-4 justify-items-center lg:grid-cols-[12%_88%] lg:justify-items-start drop-shadow-lg"
-              >
-                <div>
-                  <i
-                    class="fa-solid fa-file-invoice-dollar text-5xl"
-                    style="color: #7c8ef6"
-                  ></i>
-                </div>
-                <div>
-                  <p class="text-xl text-blue-500">Reporting</p>
-                </div>
-              </div>
-              <div class="grid justify-items-center lg:justify-items-start">
-                <p class="text-2xl w-4/5 lg:w-auto">
-                  Generates reports to monitor various aspects of the operation
-                  such as work order status, employee productivity, spare part
-                  consumption, out-of-service assets, and road call assets.
-                </p>
-              </div>
+            <div>
+              <img
+                src="https://raw.githubusercontent.com/jadedanial/asset-maintenance-system/main/ui1.png"
+                alt="image"
+              />
             </div>
           </div>
-          <div class="grid justify-items-center lg:justify-items-end">
-            <img
-              id="asset_image"
-              class="w-full drop-shadow-2xl"
-              src="https://raw.githubusercontent.com/jadedanial/asset-maintenance-system/main/ui1.png"
-              alt="image"
-            />
-            <img
-              id="workorder_image"
-              class="hidden w-4/5 lg:w-11/12 drop-shadow-2xl"
-              src="https://raw.githubusercontent.com/jadedanial/asset-maintenance-system/main/ui2.png"
-              alt="image"
-            />
+          <div
+            id="ams_workorder_desc"
+            class="ams_feature grid gap-16 lg:grid-cols-[30%_65%] absolute top-0 drop-shadow-lg"
+          >
+            <div class="lg:text-left">
+              <p class="text-xl text-blue-500 pb-8">Work Order Management</p>
+              <p class="text-lg text-black">
+                Allows the user to create and update asset information, control,
+                and organize assets to optimize operations.
+              </p>
+            </div>
+            <div>
+              <img
+                src="https://raw.githubusercontent.com/jadedanial/asset-maintenance-system/main/ui1.png"
+                alt="image"
+              />
+            </div>
+          </div>
+          <div
+            id="ams_inventory_desc"
+            class="ams_feature grid gap-16 lg:grid-cols-[30%_65%] absolute top-0 drop-shadow-lg"
+          >
+            <div class="lg:text-left">
+              <p class="text-xl text-blue-500 pb-8">Inventory Management</p>
+              <p class="text-lg text-black">
+                Allows the user to create and update asset information, control,
+                and organize assets to optimize operations.
+              </p>
+            </div>
+            <div>
+              <img
+                src="https://raw.githubusercontent.com/jadedanial/asset-maintenance-system/main/ui1.png"
+                alt="image"
+              />
+            </div>
+          </div>
+          <div
+            id="ams_employee_desc"
+            class="ams_feature grid gap-16 lg:grid-cols-[30%_65%] absolute top-0 drop-shadow-lg"
+          >
+            <div class="lg:text-left">
+              <p class="text-xl text-blue-500 pb-8">Employee Management</p>
+              <p class="text-lg text-black">
+                Allows the user to create and update asset information, control,
+                and organize assets to optimize operations.
+              </p>
+            </div>
+            <div>
+              <img
+                src="https://raw.githubusercontent.com/jadedanial/asset-maintenance-system/main/ui1.png"
+                alt="image"
+              />
+            </div>
+          </div>
+          <div
+            id="ams_report_desc"
+            class="ams_feature grid gap-16 lg:grid-cols-[30%_65%] top-0 drop-shadow-lg"
+          >
+            <div class="lg:text-left">
+              <p class="text-xl text-blue-500 pb-8">Report</p>
+              <p class="text-lg text-black">
+                Allows the user to create and update asset information, control,
+                and organize assets to optimize operations.
+              </p>
+            </div>
+            <div>
+              <img
+                src="https://raw.githubusercontent.com/jadedanial/asset-maintenance-system/main/ui1.png"
+                alt="image"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -434,31 +411,87 @@
     </footer>
     <script>
       //Mobile Menu
-      const hamburger = document.querySelector("#hamburger");
-      const menu = document.querySelector("#menu");
-      const home = document.querySelector("#home");
-      const projects = document.querySelector("#projects");
-      const footer = document.querySelector("#footer");
-      const ams_sm_link = document.querySelector("#ams_sm_link");
-      const faSolid = document.querySelector(".fa-solid");
 
-      hamburger.addEventListener("click", () => {
-        menu.classList.toggle("hidden");
-        home.classList.toggle("hidden");
-        projects.classList.toggle("hidden");
-        footer.classList.toggle("hidden");
+      const elements = [
+        "#hamburger",
+        "#menu",
+        "#home",
+        "#projects",
+        "#footer",
+        "#ams_sm_link",
+        ".fa-solid",
+      ];
+
+      const [hamburger, menu, home, projects, footer, ams_sm_link, faSolid] =
+        elements.map((id) => document.querySelector(id));
+
+      function toggleHidden() {
+        [menu, home, projects, footer].forEach((el) =>
+          el.classList.toggle("hidden")
+        );
         faSolid.classList.toggle("fa-xmark");
+      }
+
+      [hamburger, ams_sm_link].forEach((el) =>
+        el.addEventListener("click", toggleHidden)
+      );
+
+      //Select Feature
+
+      const features = [
+        "asset",
+        "workorder",
+        "inventory",
+        "employee",
+        "report",
+      ];
+
+      features.forEach((feature) => {
+        const button = document.getElementById(`ams_${feature}_button`);
+        button.addEventListener("click", () =>
+          selectFeature(`ams_${feature}_desc`)
+        );
       });
 
-      [ams_sm_link].forEach((link) => {
-        link.addEventListener("click", () => {
-          menu.classList.toggle("hidden");
-          home.classList.toggle("hidden");
-          projects.classList.toggle("hidden");
-          footer.classList.toggle("hidden");
-          faSolid.classList.toggle("fa-xmark");
+      function toggleFeatureVisibility(features, visibility, opacity) {
+        Array.from(features).forEach((feature) => {
+          feature.style.visibility = visibility;
+          feature.style.opacity = opacity;
         });
-      });
+      }
+
+      function toggleButtonColor(buttons, removeColor, addColor) {
+        Array.from(buttons).forEach((button) => {
+          button.classList.remove(removeColor);
+          button.classList.add(addColor);
+        });
+      }
+
+      function hideFeature() {
+        var features = document.getElementsByClassName("ams_feature");
+        toggleFeatureVisibility(features, "hidden", 0);
+      }
+
+      function showFeature() {
+        hideFeature();
+        var ams_asset_desc = document.getElementById("ams_asset_desc");
+        toggleFeatureVisibility([ams_asset_desc], "visible", 1);
+        ams_asset_desc.style.transition = "opacity 3s";
+        ams_asset_desc.classList.add("text-blue-700");
+      }
+
+      function selectFeature(feat) {
+        hideFeature();
+        var buttons = document.getElementsByClassName("ams_button");
+        toggleButtonColor(buttons, "text-blue-700", "text-blue-400");
+
+        var feature = document.getElementById(feat);
+        toggleFeatureVisibility([feature], "visible", 1);
+        feature.style.transition = "opacity 3s";
+
+        var buttonId = feat.replace("_desc", "_button");
+        document.getElementById(buttonId).classList.add("text-blue-700");
+      }
 
       //Scroll Reveal
       ScrollReveal({
