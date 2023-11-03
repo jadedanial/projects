@@ -256,13 +256,13 @@
             </p>
           </div>
         </div>
-        <div id="ams_features" class="pb-12">
+        <div id="ams_features">
           <ul
-            class="flex flex-wrap justify-center text-blue-400 text-3xl lg:text-5xl space-x-4 space-y-4 drop-shadow-lg"
+            class="flex flex-wrap justify-center text-blue-400 text-3xl lg:text-5xl drop-shadow-lg"
           >
             <div
               id="ams_asset_button"
-              class="ams_button flex flex-col justify-center items-center w-32 h-32 lg:w-36 lg:h-36 text-blue-700 hover:text-blue-700 bg-white hover:bg-white rounded-xl cursor-pointer drop-shadow-2xl"
+              class="ams_button flex flex-col justify-center items-center w-28 h-28 lg:w-36 lg:h-36 text-blue-700 hover:text-blue-700 m-4 bg-white hover:bg-white rounded-xl cursor-pointer drop-shadow-2xl"
               onclick="selectFeature('ams_asset_desc')"
             >
               <a><i class="fa-solid fa-gears"></i></a>
@@ -270,7 +270,7 @@
             </div>
             <div
               id="ams_workorder_button"
-              class="ams_button flex flex-col justify-center items-center w-32 h-32 lg:w-36 lg:h-36 hover:text-blue-700 hover:bg-white rounded-xl cursor-pointer drop-shadow-2xl"
+              class="ams_button flex flex-col justify-center items-center w-28 h-28 lg:w-36 lg:h-36 hover:text-blue-700 m-4 hover:bg-white rounded-xl cursor-pointer drop-shadow-2xl"
               onclick="selectFeature('ams_workorder_desc')"
             >
               <a><i class="fa-solid fa-person-digging"></i></a>
@@ -278,7 +278,7 @@
             </div>
             <div
               id="ams_inventory_button"
-              class="ams_button flex flex-col justify-center items-center w-32 h-32 lg:w-36 lg:h-36 hover:text-blue-700 hover:bg-white rounded-xl cursor-pointer drop-shadow-2xl"
+              class="ams_button flex flex-col justify-center items-center w-28 h-28 lg:w-36 lg:h-36 hover:text-blue-700 m-4 hover:bg-white rounded-xl cursor-pointer drop-shadow-2xl"
               onclick="selectFeature('ams_inventory_desc')"
             >
               <a><i class="fa-solid fa-cart-flatbed"></i></a>
@@ -286,7 +286,7 @@
             </div>
             <div
               id="ams_employee_button"
-              class="ams_button flex flex-col justify-center items-center w-32 h-32 lg:w-36 lg:h-36 hover:text-blue-700 hover:bg-white rounded-xl cursor-pointer drop-shadow-2xl"
+              class="ams_button flex flex-col justify-center items-center w-28 h-28 lg:w-36 lg:h-36 hover:text-blue-700 m-4 hover:bg-white rounded-xl cursor-pointer drop-shadow-2xl"
               onclick="selectFeature('ams_employee_desc')"
             >
               <a><i class="fa-solid fa-users-gear"></i></a>
@@ -294,7 +294,7 @@
             </div>
             <div
               id="ams_report_button"
-              class="ams_button flex flex-col justify-center items-center w-32 h-32 lg:w-36 lg:h-36 hover:text-blue-700 hover:bg-white rounded-xl cursor-pointer drop-shadow-2xl"
+              class="ams_button flex flex-col justify-center items-center w-28 h-28 lg:w-36 lg:h-36 hover:text-blue-700 m-4 hover:bg-white rounded-xl cursor-pointer drop-shadow-2xl"
               onclick="selectFeature('ams_report_desc')"
             >
               <a><i class="fa-solid fa-table"></i></a>
@@ -302,7 +302,7 @@
             </div>
             <div
               id="ams_development_button"
-              class="ams_button flex flex-col justify-center items-center w-32 h-32 lg:w-36 lg:h-36 hover:text-blue-700 hover:bg-white rounded-xl cursor-pointer drop-shadow-2xl"
+              class="ams_button flex flex-col justify-center items-center w-28 h-28 lg:w-36 lg:h-36 hover:text-blue-700 m-4 hover:bg-white rounded-xl cursor-pointer drop-shadow-2xl"
               onclick="selectFeature('ams_development_desc')"
             >
               <a><i class="fa-solid fa-code"></i></a>
@@ -385,10 +385,28 @@
           </div>
           <div
             id="ams_report_desc"
-            class="ams_feature grid gap-16 lg:grid-cols-[30%_65%] top-0 drop-shadow-lg"
+            class="ams_feature grid gap-16 lg:grid-cols-[30%_65%] absolute top-0 drop-shadow-lg"
           >
             <div>
               <p class="text-xl text-blue-500 pb-8">Report</p>
+              <p class="text-lg text-black">
+                Allows the user to create and update asset information, control,
+                and organize assets to optimize operations.
+              </p>
+            </div>
+            <div>
+              <img
+                src="https://raw.githubusercontent.com/jadedanial/asset-maintenance-system/main/ui1.png"
+                alt="image"
+              />
+            </div>
+          </div>
+          <div
+            id="ams_development_desc"
+            class="ams_feature grid gap-16 lg:grid-cols-[30%_65%] top-0 drop-shadow-lg"
+          >
+            <div>
+              <p class="text-xl text-blue-500 pb-8">Development</p>
               <p class="text-lg text-black">
                 Allows the user to create and update asset information, control,
                 and organize assets to optimize operations.
@@ -450,6 +468,7 @@
         "inventory",
         "employee",
         "report",
+        "development",
       ];
 
       features.forEach((feature) => {

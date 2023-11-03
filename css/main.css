@@ -604,6 +604,10 @@ video {
   z-index: 50;
 }
 
+.m-4{
+  margin: 1rem;
+}
+
 .m-8{
   margin: 2rem;
 }
@@ -624,8 +628,8 @@ video {
   height: 2.5rem;
 }
 
-.h-32{
-  height: 8rem;
+.h-28{
+  height: 7rem;
 }
 
 .h-40{
@@ -650,6 +654,10 @@ video {
 
 .w-10\/12{
   width: 83.333333%;
+}
+
+.w-28{
+  width: 7rem;
 }
 
 .w-32{
@@ -841,10 +849,6 @@ video {
 .py-48{
   padding-top: 12rem;
   padding-bottom: 12rem;
-}
-
-.pb-12{
-  padding-bottom: 3rem;
 }
 
 .pb-6{
