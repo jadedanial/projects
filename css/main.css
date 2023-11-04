@@ -632,8 +632,8 @@ video {
   height: 7rem;
 }
 
-.h-40{
-  height: 10rem;
+.h-4{
+  height: 1rem;
 }
 
 .h-56{
@@ -690,6 +690,10 @@ video {
 
 .w-\[23\%\]{
   width: 23%;
+}
+
+.w-auto{
+  width: auto;
 }
 
 .w-full{
