@@ -1027,6 +1027,11 @@ video {
   outline-offset: 2px;
 }
 
+:is(.dark .dark\:border-blue-950){
+  --tw-border-opacity: 1;
+  border-color: rgb(23 37 84 / var(--tw-border-opacity));
+}
+
 :is(.dark .dark\:bg-blue-950){
   --tw-bg-opacity: 1;
   background-color: rgb(23 37 84 / var(--tw-bg-opacity));
