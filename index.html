@@ -70,7 +70,7 @@
           <div class="flex justify-center lg:justify-end">
             <img
               id="profile"
-              class="lg:absolute lg:left-[22%] rounded-full w-56 h-56 border-2 border-blue-400"
+              class="lg:absolute top-[24%] lg:left-[22%] rounded-full w-56 h-56 border-2 border-blue-400"
               src="https://raw.githubusercontent.com/jadedanial/projects/master/images/profile.png"
               alt="image"
             />
@@ -183,7 +183,7 @@
             </div>
           </div>
           <div
-            class="text-4xl sm:text-6xl md:text-6xl lg:text-5xl xl:text-6xl pt-28 sm:pt-64 md:pt-64 lg:pt-0 px-10 lg:px-0"
+            class="text-5xl lg:text-5xl xl:text-6xl pt-64 lg:pt-0 px-10 lg:px-0"
           >
             <div>
               <div class="font-extrabold">
@@ -194,9 +194,14 @@
               </div>
               <p
                 id="position"
-                class="text-lg sm:text-2xl md:text-3xl lg:text-2xl font-semibold"
+                class="text-lg sm:text-2xl md:text-3xl lg:text-2xl pt-4"
               >
                 Full Stack Web Developer
+              </p>
+              <p id="welcome" class="text-lg lg:w-4/5">
+                I enjoy bringing ideas to life with code. My skills span from
+                design to back-end with Python Django REST Framework, and
+                front-end with JavaScript, ReactJS, HTML, and Tailwind CSS.
               </p>
               <ul
                 class="flex justify-center space-x-4 pt-2 sm:pt-6 md:pt-6 lg:pt-8 lg:justify-start drop-shadow-lg"
@@ -232,7 +237,7 @@
       </div>
       <div
         id="projects"
-        class="min-h-screen flex flex-col py-48 space-y-12 px-10 lg:px-20"
+        class="min-h-screen flex flex-col py-64 space-y-12 px-10 lg:px-20"
       >
         <div id="p_ams"></div>
         <div
@@ -246,7 +251,7 @@
               alt="image"
             />
           </div>
-          <div>
+          <div class="w-full lg:max-w-fit">
             <p class="text-xl lg:text-2xl text-blue-500 font-bold">
               Asset Maintenance System
             </p>
@@ -424,7 +429,7 @@
     </main>
     <footer
       id="footer"
-      class="flex flex-col text-lg justify-end items-center overflow-hidden pb-6 drop-shadow-2xl"
+      class="flex flex-col text-lg justify-end items-center overflow-hidden mt-64 pb-6 drop-shadow-2xl"
     >
       <a
         class="font-extrabold hover:underline drop-shadow-lg"
@@ -567,9 +572,10 @@
       ScrollReveal().reveal("#greet", { delay: 200, origin: "right" });
       ScrollReveal().reveal("#name", { delay: 250, origin: "right" });
       ScrollReveal().reveal("#position", { delay: 300, origin: "right" });
-      ScrollReveal().reveal("#cv", { delay: 350, origin: "right" });
-      ScrollReveal().reveal("#github", { delay: 400, origin: "right" });
-      ScrollReveal().reveal("#linkedin", { delay: 450, origin: "right" });
+      ScrollReveal().reveal("#welcome", { delay: 350, origin: "right" });
+      ScrollReveal().reveal("#cv", { delay: 400, origin: "right" });
+      ScrollReveal().reveal("#github", { delay: 450, origin: "right" });
+      ScrollReveal().reveal("#linkedin", { delay: 500, origin: "right" });
       ScrollReveal().reveal("#project_title", { delay: 200, origin: "top" });
       ScrollReveal().reveal("#ams", { delay: 400, origin: "top" });
       ScrollReveal().reveal("#ams_features", { delay: 600, origin: "top" });
