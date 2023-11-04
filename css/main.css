@@ -668,10 +668,6 @@ video {
   width: 2.5rem;
 }
 
-.w-10\/12{
-  width: 83.333333%;
-}
-
 .w-28{
   width: 7rem;
 }
@@ -706,6 +702,10 @@ video {
 
 .w-\[23\%\]{
   width: 23%;
+}
+
+.w-\[95\%\]{
+  width: 95%;
 }
 
 .w-auto{
@@ -851,9 +851,9 @@ video {
   padding-right: 2.5rem;
 }
 
-.px-5{
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .py-3{
