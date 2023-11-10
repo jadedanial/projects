@@ -1072,6 +1072,10 @@ video {
 }
 
 @media (min-width: 640px){
+  .sm\:pt-52{
+    padding-top: 13rem;
+  }
+
   .sm\:pt-6{
     padding-top: 1.5rem;
   }
@@ -1149,8 +1153,8 @@ video {
     grid-template-columns: 30% 65%;
   }
 
-  .lg\:grid-cols-\[50\%_45\%\]{
-    grid-template-columns: 50% 45%;
+  .lg\:grid-cols-\[54\%_44\%\]{
+    grid-template-columns: 54% 44%;
   }
 
   .lg\:flex-row{
@@ -1173,6 +1177,11 @@ video {
     --tw-space-x-reverse: 0;
     margin-right: calc(2rem * var(--tw-space-x-reverse));
     margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .lg\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .lg\:px-12{
