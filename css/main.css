@@ -896,8 +896,8 @@ video {
   padding-top: 1rem;
 }
 
-.pt-40{
-  padding-top: 10rem;
+.pt-48{
+  padding-top: 12rem;
 }
 
 .text-center{
@@ -1076,10 +1076,6 @@ video {
     padding-top: 1.5rem;
   }
 
-  .sm\:pt-60{
-    padding-top: 15rem;
-  }
-
   .sm\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1094,6 +1090,10 @@ video {
 @media (min-width: 768px){
   .md\:pt-6{
     padding-top: 1.5rem;
+  }
+
+  .md\:pt-72{
+    padding-top: 18rem;
   }
 
   .md\:text-3xl{
@@ -1171,11 +1171,6 @@ video {
     margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .lg\:px-0{
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
   .lg\:px-12{
     padding-left: 3rem;
     padding-right: 3rem;
@@ -1188,10 +1183,6 @@ video {
 
   .lg\:pt-0{
     padding-top: 0px;
-  }
-
-  .lg\:pt-20{
-    padding-top: 5rem;
   }
 
   .lg\:pt-8{
