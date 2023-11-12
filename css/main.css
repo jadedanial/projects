@@ -572,8 +572,8 @@ video {
   left: 45%;
 }
 
-.right-\[0\.5\%\]{
-  right: 0.5%;
+.right-\[1\%\]{
+  right: 1%;
 }
 
 .top-0{
@@ -704,8 +704,8 @@ video {
   width: 70%;
 }
 
-.w-\[92\.5\%\]{
-  width: 92.5%;
+.w-\[88\%\]{
+  width: 88%;
 }
 
 .w-auto{
