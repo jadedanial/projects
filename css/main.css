@@ -572,8 +572,8 @@ video {
   left: 45%;
 }
 
-.right-\[1\%\]{
-  right: 1%;
+.right-\[0\.5\%\]{
+  right: 0.5%;
 }
 
 .top-0{
@@ -898,10 +898,6 @@ video {
 
 .pb-\[30\%\]{
   padding-bottom: 30%;
-}
-
-.pl-12{
-  padding-left: 3rem;
 }
 
 .pt-2{
