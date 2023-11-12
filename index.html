@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jade Danial</title>
+    <title>JadeDanial Projects</title>
     <link rel="stylesheet" href="css/main.css" />
     <link
       rel="stylesheet"
@@ -21,7 +21,7 @@
     <header class="flex justify-center items-center m-8">
       <nav
         id="navbar"
-        class="flex top-0 max-h-14 w-[92.5%] justify-between px-5 py-3 lg:px-12 lg:w-9/12 bg-white dark:bg-slate-700 rounded-full drop-shadow-lg"
+        class="flex top-0 max-h-14 w-[92.5%] justify-between px-5 py-3 lg:px-12 lg:w-9/12 bg-white dark:bg-slate-900 rounded-full drop-shadow-lg"
       >
         <div>
           <a
@@ -69,35 +69,66 @@
           onclick="changeMode('light')"
           class="relative w-10 h-10 focus:outline-none focus:shadow-outline"
         >
-          <i class="fa-solid fa-sun"></i>
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="w-6 h-6"
+          >
+            <path
+              d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+              class="fill-sky-400/20 stroke-sky-500"
+            ></path>
+            <path
+              d="M12 4v1M17.66 6.344l-.828.828M20.005 12.004h-1M17.66 17.664l-.828-.828M12 20.01V19M6.34 17.664l.835-.836M3.995 12.004h1.01M6 6l.835.836"
+              class="stroke-sky-500"
+            ></path>
+          </svg>
         </button>
         <button
           id="light"
           onclick="changeMode('dark')"
           class="relative w-10 h-10 focus:outline-none focus:shadow-outline"
         >
-          <i class="fa-regular fa-sun"></i>
+          <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M17.715 15.15A6.5 6.5 0 0 1 9 6.035C6.106 6.922 4 9.645 4 12.867c0 3.94 3.153 7.136 7.042 7.136 3.101 0 5.734-2.032 6.673-4.853Z"
+              class="fill-sky-400/20"
+            ></path>
+            <path
+              d="m17.715 15.15.95.316a1 1 0 0 0-1.445-1.185l.495.869ZM9 6.035l.846.534a1 1 0 0 0-1.14-1.49L9 6.035Zm8.221 8.246a5.47 5.47 0 0 1-2.72.718v2a7.47 7.47 0 0 0 3.71-.98l-.99-1.738Zm-2.72.718A5.5 5.5 0 0 1 9 9.5H7a7.5 7.5 0 0 0 7.5 7.5v-2ZM9 9.5c0-1.079.31-2.082.845-2.93L8.153 5.5A7.47 7.47 0 0 0 7 9.5h2Zm-4 3.368C5 10.089 6.815 7.75 9.292 6.99L8.706 5.08C5.397 6.094 3 9.201 3 12.867h2Zm6.042 6.136C7.718 19.003 5 16.268 5 12.867H3c0 4.48 3.588 8.136 8.042 8.136v-2Zm5.725-4.17c-.81 2.433-3.074 4.17-5.725 4.17v2c3.552 0 6.553-2.327 7.622-5.537l-1.897-.632Z"
+              class="fill-sky-500"
+            ></path>
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M17 3a1 1 0 0 1 1 1 2 2 0 0 0 2 2 1 1 0 1 1 0 2 2 2 0 0 0-2 2 1 1 0 1 1-2 0 2 2 0 0 0-2-2 1 1 0 1 1 0-2 2 2 0 0 0 2-2 1 1 0 0 1 1-1Z"
+              class="fill-sky-500"
+            ></path>
+          </svg>
         </button>
       </div>
     </header>
     <main>
       <div id="home">
         <div
-          class="min-h-[calc(100vh-12rem)] grid grid-cols-1 gap-16 content-center pt-32 sm:pt-56 md:pt-64 lg:pt-0 lg:grid-cols-[54%_44%] lg:gap-4"
+          class="min-h-[calc(100vh-12rem)] grid grid-cols-1 gap-16 content-center pt-32 lg:pl-20 sm:pt-56 md:pt-64 lg:pt-0 lg:grid-cols-[46%_48%] lg:gap-4"
         >
           <div class="grid place-items-center">
-            <div
-              class="relative w-[35%] pb-[35%] lg:w-[30%] lg:pb-[30%] rounded-full"
-            >
+            <div class="relative w-[30%] pb-[30%] rounded-full">
               <img
                 id="profile"
-                class="absolute w-[100%] border-2 bg-blue-400 dark:bg-blue-950 border-blue-400 dark:border-blue-950 rounded-full drop-shadow-lg"
+                class="absolute w-[100%] border-2 bg-blue-400 dark:bg-slate-900 border-blue-400 dark:border-slate-900 rounded-full drop-shadow-lg"
                 src="https://raw.githubusercontent.com/jadedanial/projects/master/images/profile.png"
                 alt="image"
               />
               <div
                 id="javascript"
-                class="absolute w-[45%] top-[5%] left-[-28%] translate-x-[-50%] translate-y-[-50%] bg-blue-400 dark:bg-blue-950 rounded-full drop-shadow-lg"
+                class="absolute w-[45%] top-[5%] left-[-28%] translate-x-[-50%] translate-y-[-50%] bg-blue-400 dark:bg-slate-900 rounded-full drop-shadow-lg"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                   <path
@@ -109,7 +140,7 @@
               </div>
               <div
                 id="reactjs"
-                class="absolute w-[40%] top-[-35%] left-[45%] translate-x-[-50%] translate-y-[-50%] bg-blue-400 dark:bg-blue-950 rounded-full drop-shadow-lg"
+                class="absolute w-[40%] top-[-35%] left-[45%] translate-x-[-50%] translate-y-[-50%] bg-blue-400 dark:bg-slate-900 rounded-full drop-shadow-lg"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -125,7 +156,7 @@
               </div>
               <div
                 id="python"
-                class="absolute w-[55%] top-[0%] left-[135%] translate-x-[-50%] translate-y-[-50%] bg-blue-400 dark:bg-blue-950 rounded-full drop-shadow-lg"
+                class="absolute w-[55%] top-[0%] left-[135%] translate-x-[-50%] translate-y-[-50%] bg-blue-400 dark:bg-slate-900 rounded-full drop-shadow-lg"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                   <path
@@ -142,7 +173,7 @@
               </div>
               <div
                 id="tailwind"
-                class="absolute w-[65%] top-[100%] left-[138%] translate-x-[-50%] translate-y-[-50%] bg-blue-400 dark:bg-blue-950 rounded-full drop-shadow-lg"
+                class="absolute w-[65%] top-[100%] left-[138%] translate-x-[-50%] translate-y-[-50%] bg-blue-400 dark:bg-slate-900 rounded-full drop-shadow-lg"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                   <path
@@ -154,7 +185,7 @@
               </div>
               <div
                 id="html"
-                class="absolute w-[70%] top-[150%] left-[45%] translate-x-[-50%] translate-y-[-50%] bg-blue-400 dark:bg-blue-950 rounded-full drop-shadow-lg"
+                class="absolute w-[70%] top-[150%] left-[45%] translate-x-[-50%] translate-y-[-50%] bg-blue-400 dark:bg-slate-900 rounded-full drop-shadow-lg"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="-3 -5 46 46">
                   <path
@@ -166,7 +197,7 @@
               </div>
               <div
                 id="django"
-                class="absolute w-[55%] top-[90%] left-[-35%] translate-x-[-50%] translate-y-[-50%] bg-blue-400 dark:bg-blue-950 rounded-full drop-shadow-lg"
+                class="absolute w-[55%] top-[90%] left-[-35%] translate-x-[-50%] translate-y-[-50%] bg-blue-400 dark:bg-slate-900 rounded-full drop-shadow-lg"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -4 30 30">
                   <path
@@ -264,7 +295,7 @@
           <ul class="flex flex-wrap justify-center text-3xl lg:text-5xl">
             <div
               id="ams_asset_button"
-              class="ams_button flex flex-col justify-center items-center w-28 h-28 lg:w-36 lg:h-36 text-blue-700 hover:text-blue-700 m-4 bg-white hover:bg-white rounded-xl cursor-pointer drop-shadow-2xl"
+              class="ams_button flex flex-col justify-center items-center w-28 h-28 lg:w-36 lg:h-36 text-blue-700 hover:text-blue-700 m-4 bg-white dark:bg-slate-900 hover:bg-white dark:hover:bg-slate-900 rounded-xl cursor-pointer drop-shadow-2xl"
               onclick="selectFeature('ams_asset_desc')"
             >
               <a><i class="fa-solid fa-gears"></i></a>
@@ -272,7 +303,7 @@
             </div>
             <div
               id="ams_workorder_button"
-              class="ams_button flex flex-col justify-center items-center w-28 h-28 lg:w-36 lg:h-36 text-blue-400 hover:text-blue-700 m-4 hover:bg-white rounded-xl cursor-pointer drop-shadow-2xl"
+              class="ams_button flex flex-col justify-center items-center w-28 h-28 lg:w-36 lg:h-36 text-blue-400 hover:text-blue-700 m-4 hover:bg-white dark:hover:bg-slate-900 rounded-xl cursor-pointer drop-shadow-2xl"
               onclick="selectFeature('ams_workorder_desc')"
             >
               <a><i class="fa-solid fa-person-digging"></i></a>
@@ -280,7 +311,7 @@
             </div>
             <div
               id="ams_inventory_button"
-              class="ams_button flex flex-col justify-center items-center w-28 h-28 lg:w-36 lg:h-36 text-blue-400 hover:text-blue-700 m-4 hover:bg-white rounded-xl cursor-pointer drop-shadow-2xl"
+              class="ams_button flex flex-col justify-center items-center w-28 h-28 lg:w-36 lg:h-36 text-blue-400 hover:text-blue-700 m-4 hover:bg-white dark:hover:bg-slate-900 rounded-xl cursor-pointer drop-shadow-2xl"
               onclick="selectFeature('ams_inventory_desc')"
             >
               <a><i class="fa-solid fa-cart-flatbed"></i></a>
@@ -288,7 +319,7 @@
             </div>
             <div
               id="ams_employee_button"
-              class="ams_button flex flex-col justify-center items-center w-28 h-28 lg:w-36 lg:h-36 text-blue-400 hover:text-blue-700 m-4 hover:bg-white rounded-xl cursor-pointer drop-shadow-2xl"
+              class="ams_button flex flex-col justify-center items-center w-28 h-28 lg:w-36 lg:h-36 text-blue-400 hover:text-blue-700 m-4 hover:bg-white dark:hover:bg-slate-900 rounded-xl cursor-pointer drop-shadow-2xl"
               onclick="selectFeature('ams_employee_desc')"
             >
               <a><i class="fa-solid fa-users-gear"></i></a>
@@ -296,7 +327,7 @@
             </div>
             <div
               id="ams_report_button"
-              class="ams_button flex flex-col justify-center items-center w-28 h-28 lg:w-36 lg:h-36 text-blue-400 hover:text-blue-700 m-4 hover:bg-white rounded-xl cursor-pointer drop-shadow-2xl"
+              class="ams_button flex flex-col justify-center items-center w-28 h-28 lg:w-36 lg:h-36 text-blue-400 hover:text-blue-700 m-4 hover:bg-white dark:hover:bg-slate-900 rounded-xl cursor-pointer drop-shadow-2xl"
               onclick="selectFeature('ams_report_desc')"
             >
               <a><i class="fa-solid fa-table"></i></a>
@@ -304,7 +335,7 @@
             </div>
             <div
               id="ams_development_button"
-              class="ams_button flex flex-col justify-center items-center w-28 h-28 lg:w-36 lg:h-36 text-blue-400 hover:text-blue-700 m-4 hover:bg-white rounded-xl cursor-pointer drop-shadow-2xl"
+              class="ams_button flex flex-col justify-center items-center w-28 h-28 lg:w-36 lg:h-36 text-blue-400 hover:text-blue-700 m-4 hover:bg-white dark:hover:bg-slate-900 rounded-xl cursor-pointer drop-shadow-2xl"
               onclick="selectFeature('ams_development_desc')"
             >
               <a><i class="fa-solid fa-code"></i></a>
@@ -461,21 +492,8 @@
       </div>
     </footer>
     <script>
-      //Light/Dark Theme
-
-      function updateTheme() {
-        const isDark = localStorage.theme === "dark";
-        document.documentElement.classList.toggle("dark", isDark);
-        document.getElementById("light").classList.toggle("hidden", isDark);
-        document.getElementById("dark").classList.toggle("hidden", !isDark);
-      }
-
-      function changeMode(mode) {
-        localStorage.theme = mode;
-        updateTheme();
-      }
-
       //Mobile Menu
+
       const elements = [
         "#hamburger",
         "#menu",
@@ -500,20 +518,41 @@
         el.addEventListener("click", toggleHidden)
       );
 
-      //Select Feature
-      const features = [
-        "asset",
-        "workorder",
-        "inventory",
-        "employee",
-        "report",
-        "development",
-      ];
+      //Theme
+
+      var mode = "",
+        selectedFeature = "",
+        features = [
+          "asset",
+          "workorder",
+          "inventory",
+          "employee",
+          "report",
+          "development",
+        ];
+
+      function updateTheme() {
+        const isDark = localStorage.theme === "dark";
+        document.documentElement.classList.toggle("dark", isDark);
+        document.getElementById("light").classList.toggle("hidden", isDark);
+        document.getElementById("dark").classList.toggle("hidden", !isDark);
+        mode = isDark ? "dark" : "light";
+      }
+
+      function changeMode(mode) {
+        localStorage.theme = mode;
+        updateTheme();
+        selectFeature(
+          selectedFeature,
+          `ams_${selectedFeature}_button`,
+          `ams_${selectedFeature}_desc`
+        );
+      }
 
       features.forEach((feature) => {
         const button = document.getElementById(`ams_${feature}_button`);
         button.addEventListener("click", () =>
-          selectFeature(`ams_${feature}_desc`)
+          selectFeature(feature, `ams_${feature}_button`, `ams_${feature}_desc`)
         );
       });
 
@@ -538,8 +577,11 @@
       }
 
       function hideFeature() {
-        var features = document.getElementsByClassName("ams_feature");
-        toggleFeatureVisibility(features, "hidden", 0);
+        toggleFeatureVisibility(
+          document.getElementsByClassName("ams_feature"),
+          "hidden",
+          0
+        );
       }
 
       function showFeature() {
@@ -549,8 +591,10 @@
         ams_asset_desc.style.transition = "opacity 2s";
       }
 
-      function selectFeature(feat) {
+      function selectFeature(feat, feat_button, feat_desc) {
+        selectedFeature = feat;
         hideFeature();
+
         var buttons = document.getElementsByClassName("ams_button");
         toggleButtonColor(
           buttons,
@@ -558,17 +602,26 @@
           "text-blue-400",
           "bg-white"
         );
+        toggleButtonColor(
+          buttons,
+          "text-blue-700",
+          "text-blue-400",
+          "dark:bg-slate-900"
+        );
 
-        var feature = document.getElementById(feat);
+        var feature = document.getElementById(feat_desc);
         toggleFeatureVisibility([feature], "visible", 1);
         feature.style.transition = "opacity 2s";
 
-        var buttonId = feat.replace("_desc", "_button");
-        document.getElementById(buttonId).classList.add("text-blue-700");
-        document.getElementById(buttonId).classList.add("bg-white");
+        var addColor = mode === "dark" ? "dark:bg-slate-900" : "bg-white";
+        var buttonId = feat_button;
+        document
+          .getElementById(buttonId)
+          .classList.add("text-blue-700", addColor);
       }
 
       //Scroll Reveal
+
       ScrollReveal({
         reset: false,
         distance: "60px",

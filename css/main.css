@@ -644,6 +644,10 @@ video {
   height: 1rem;
 }
 
+.h-6{
+  height: 1.5rem;
+}
+
 .max-h-14{
   max-height: 3.5rem;
 }
@@ -668,12 +672,16 @@ video {
   width: 8rem;
 }
 
+.w-6{
+  width: 1.5rem;
+}
+
 .w-\[100\%\]{
   width: 100%;
 }
 
-.w-\[35\%\]{
-  width: 35%;
+.w-\[30\%\]{
+  width: 30%;
 }
 
 .w-\[40\%\]{
@@ -848,6 +856,18 @@ video {
   --tw-gradient-to: #dbeafe var(--tw-gradient-to-position);
 }
 
+.fill-sky-400\/20{
+  fill: rgb(56 189 248 / 0.2);
+}
+
+.fill-sky-500{
+  fill: #0ea5e9;
+}
+
+.stroke-sky-500{
+  stroke: #0ea5e9;
+}
+
 .px-10{
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -876,8 +896,8 @@ video {
   padding-bottom: 2rem;
 }
 
-.pb-\[35\%\]{
-  padding-bottom: 35%;
+.pb-\[30\%\]{
+  padding-bottom: 30%;
 }
 
 .pt-2{
@@ -1033,19 +1053,14 @@ video {
   outline-offset: 2px;
 }
 
-:is(.dark .dark\:border-blue-950){
+:is(.dark .dark\:border-slate-900){
   --tw-border-opacity: 1;
-  border-color: rgb(23 37 84 / var(--tw-border-opacity));
+  border-color: rgb(15 23 42 / var(--tw-border-opacity));
 }
 
-:is(.dark .dark\:bg-blue-950){
+:is(.dark .dark\:bg-slate-900){
   --tw-bg-opacity: 1;
-  background-color: rgb(23 37 84 / var(--tw-bg-opacity));
-}
-
-:is(.dark .dark\:bg-slate-700){
-  --tw-bg-opacity: 1;
-  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
 :is(.dark .dark\:bg-gradient-to-b){
@@ -1065,6 +1080,11 @@ video {
 :is(.dark .dark\:text-white){
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+:is(.dark .dark\:hover\:bg-slate-900:hover){
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 640px){
@@ -1144,10 +1164,6 @@ video {
     width: 75%;
   }
 
-  .lg\:w-\[30\%\]{
-    width: 30%;
-  }
-
   .lg\:max-w-fit{
     max-width: -moz-fit-content;
     max-width: fit-content;
@@ -1157,8 +1173,8 @@ video {
     grid-template-columns: 30% 65%;
   }
 
-  .lg\:grid-cols-\[54\%_44\%\]{
-    grid-template-columns: 54% 44%;
+  .lg\:grid-cols-\[46\%_48\%\]{
+    grid-template-columns: 46% 48%;
   }
 
   .lg\:flex-row{
@@ -1198,8 +1214,8 @@ video {
     padding-right: 5rem;
   }
 
-  .lg\:pb-\[30\%\]{
-    padding-bottom: 30%;
+  .lg\:pl-20{
+    padding-left: 5rem;
   }
 
   .lg\:pt-0{
