@@ -8,7 +8,7 @@ This project was built using HTML and Tailwind CSS.
 
 # Screenshots
 
-![This is an image](https://github.com/jadedanial/asset-maintenance-system/blob/main/ui1.png)
+![This is an image](https://raw.githubusercontent.com/jadedanial/projects/master/ui1.png)
 
 # Project Status
 
