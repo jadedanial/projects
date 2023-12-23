@@ -534,6 +534,12 @@
 
       function updateTheme() {
         const isDark = localStorage.theme === "dark";
+        const themeColorMetaTag = document.getElementById("theme-color");
+        if (isDark) {
+          themeColorMetaTag.setAttribute("content", "#060b17");
+        } else {
+          themeColorMetaTag.setAttribute("content", "#e9f2ff");
+        }
         document.documentElement.classList.toggle("dark", isDark);
         document.getElementById("light").classList.toggle("hidden", isDark);
         document.getElementById("dark").classList.toggle("hidden", !isDark);
@@ -541,12 +547,6 @@
       }
 
       function changeMode(mode) {
-        const themeColorMetaTag = document.getElementById("theme-color");
-        if (mode === "dark") {
-          themeColorMetaTag.setAttribute("content", "#060b17");
-        } else {
-          themeColorMetaTag.setAttribute("content", "#e9f2ff");
-        }
         localStorage.theme = mode;
         updateTheme();
         selectFeature(
