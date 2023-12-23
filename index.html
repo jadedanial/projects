@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="theme-color" content="light dark" />
+    <meta name="theme-color" id="theme-color" content="#0f172a" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JadeDanial Projects</title>
     <link rel="stylesheet" href="css/main.css" />
@@ -541,6 +541,12 @@
       }
 
       function changeMode(mode) {
+        const themeColorMetaTag = document.getElementById("theme-color");
+        if (mode === "dark") {
+          themeColorMetaTag.setAttribute("content", "#0f172a");
+        } else {
+          themeColorMetaTag.setAttribute("content", "#060b17");
+        }
         localStorage.theme = mode;
         updateTheme();
         selectFeature(
