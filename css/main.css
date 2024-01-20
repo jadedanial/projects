@@ -821,10 +821,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-opacity-0{
-  --tw-bg-opacity: 0;
-}
-
 .bg-\[radial-gradient\(ellipse_at_center\2c _var\(--tw-gradient-stops\)\)\]{
   background-image: radial-gradient(ellipse at center, var(--tw-gradient-stops));
 }
@@ -848,8 +844,8 @@ video {
   --tw-gradient-to: #dbeafe var(--tw-gradient-to-position);
 }
 
-.bg-cover{
-  background-size: cover;
+.bg-contain{
+  background-size: contain;
 }
 
 .bg-center{
@@ -993,6 +989,10 @@ video {
 .text-gray-700{
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+.bg-blend-difference{
+  background-blend-mode: difference;
 }
 
 .drop-shadow-2xl{
