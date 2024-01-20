@@ -8,7 +8,8 @@ This project was built using HTML and Tailwind CSS.
 
 # Screenshots
 
-![This is an image](https://raw.githubusercontent.com/jadedanial/projects/master/ui1.png)
+![This is an image](https://raw.githubusercontent.com/jadedanial/projects/master/lightui.png)
+![This is an image](https://raw.githubusercontent.com/jadedanial/projects/master/darkui.png)
 
 # Project Status
 
