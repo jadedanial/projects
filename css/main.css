@@ -848,8 +848,8 @@ video {
   --tw-gradient-to: #dbeafe var(--tw-gradient-to-position);
 }
 
-.bg-contain{
-  background-size: contain;
+.bg-cover{
+  background-size: cover;
 }
 
 .bg-center{
