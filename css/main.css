@@ -712,10 +712,6 @@ video {
   width: auto;
 }
 
-.w-full{
-  width: 100%;
-}
-
 .translate-x-\[-50\%\]{
   --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -833,8 +829,8 @@ video {
   background-image: radial-gradient(ellipse at center, var(--tw-gradient-stops));
 }
 
-.bg-\[url\(\'\.\.\/images\/back\.svg\'\)\]{
-  background-image: url('../images/back.svg');
+.bg-\[url\(\'\.\.\/images\/light\.svg\'\)\]{
+  background-image: url('../images/light.svg');
 }
 
 .from-white{
@@ -1071,8 +1067,8 @@ video {
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
-:is(.dark .dark\:bg-\[url\(\'\.\.\/images\/bck\.svg\'\)\]){
-  background-image: url('../images/bck.svg');
+:is(.dark .dark\:bg-\[url\(\'\.\.\/images\/dark\.svg\'\)\]){
+  background-image: url('../images/dark.svg');
 }
 
 :is(.dark .dark\:bg-gradient-to-b){
@@ -1178,16 +1174,12 @@ video {
     width: 80%;
   }
 
-  .lg\:w-48{
-    width: 12rem;
-  }
-
   .lg\:w-9\/12{
     width: 75%;
   }
 
-  .lg\:grid-cols-\[46\%_48\%\]{
-    grid-template-columns: 46% 48%;
+  .lg\:grid-cols-\[50\%_44\%\]{
+    grid-template-columns: 50% 44%;
   }
 
   .lg\:justify-start{
