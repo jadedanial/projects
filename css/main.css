@@ -612,6 +612,10 @@ video {
   margin: 2rem;
 }
 
+.ml-14{
+  margin-left: 3.5rem;
+}
+
 .mt-6{
   margin-top: 1.5rem;
 }
@@ -666,6 +670,10 @@ video {
 
 .w-28{
   width: 7rem;
+}
+
+.w-3\/4{
+  width: 75%;
 }
 
 .w-32{
@@ -764,10 +772,6 @@ video {
 
 .justify-between{
   justify-content: space-between;
-}
-
-.gap-16{
-  gap: 4rem;
 }
 
 .space-x-4 > :not([hidden]) ~ :not([hidden]){
@@ -1096,6 +1100,10 @@ video {
 }
 
 @media (min-width: 640px){
+  .sm\:ml-16{
+    margin-left: 4rem;
+  }
+
   .sm\:pt-52{
     padding-top: 13rem;
   }
@@ -1154,6 +1162,10 @@ video {
     margin-right: 20rem;
   }
 
+  .lg\:ml-32{
+    margin-left: 8rem;
+  }
+
   .lg\:flex{
     display: flex;
   }
@@ -1178,8 +1190,8 @@ video {
     width: 75%;
   }
 
-  .lg\:grid-cols-\[50\%_44\%\]{
-    grid-template-columns: 50% 44%;
+  .lg\:grid-cols-\[50\%_50\%\]{
+    grid-template-columns: 50% 50%;
   }
 
   .lg\:justify-start{
@@ -1203,10 +1215,6 @@ video {
   .lg\:px-20{
     padding-left: 5rem;
     padding-right: 5rem;
-  }
-
-  .lg\:pl-20{
-    padding-left: 5rem;
   }
 
   .lg\:pt-0{
