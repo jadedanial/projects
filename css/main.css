@@ -616,6 +616,10 @@ video {
   margin-bottom: 3.5rem;
 }
 
+.ml-16{
+  margin-left: 4rem;
+}
+
 .mt-6{
   margin-top: 1.5rem;
 }
@@ -1100,10 +1104,6 @@ video {
 }
 
 @media (min-width: 640px){
-  .sm\:ml-20{
-    margin-left: 5rem;
-  }
-
   .sm\:pt-52{
     padding-top: 13rem;
   }
