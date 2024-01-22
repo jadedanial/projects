@@ -1100,6 +1100,10 @@ video {
 }
 
 @media (min-width: 640px){
+  .sm\:ml-20{
+    margin-left: 5rem;
+  }
+
   .sm\:pt-52{
     padding-top: 13rem;
   }
