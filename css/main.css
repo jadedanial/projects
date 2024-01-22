@@ -616,8 +616,8 @@ video {
   margin-bottom: 3.5rem;
 }
 
-.ml-8{
-  margin-left: 2rem;
+.ml-6{
+  margin-left: 1.5rem;
 }
 
 .mt-6{
@@ -1104,8 +1104,8 @@ video {
 }
 
 @media (min-width: 640px){
-  .sm\:ml-12{
-    margin-left: 3rem;
+  .sm\:ml-10{
+    margin-left: 2.5rem;
   }
 
   .sm\:pt-52{
@@ -1132,6 +1132,10 @@ video {
 }
 
 @media (min-width: 768px){
+  .md\:ml-16{
+    margin-left: 4rem;
+  }
+
   .md\:pt-6{
     padding-top: 1.5rem;
   }
