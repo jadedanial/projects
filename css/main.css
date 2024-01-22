@@ -1132,8 +1132,8 @@ video {
 }
 
 @media (min-width: 768px){
-  .md\:ml-16{
-    margin-left: 4rem;
+  .md\:ml-14{
+    margin-left: 3.5rem;
   }
 
   .md\:pt-6{
