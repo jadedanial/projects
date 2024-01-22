@@ -1100,8 +1100,8 @@ video {
 }
 
 @media (min-width: 640px){
-  .sm\:ml-12{
-    margin-left: 3rem;
+  .sm\:ml-14{
+    margin-left: 3.5rem;
   }
 
   .sm\:pt-52{
@@ -1128,10 +1128,6 @@ video {
 }
 
 @media (min-width: 768px){
-  .md\:ml-14{
-    margin-left: 3.5rem;
-  }
-
   .md\:pt-6{
     padding-top: 1.5rem;
   }
