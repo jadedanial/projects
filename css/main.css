@@ -616,8 +616,8 @@ video {
   margin-bottom: 3.5rem;
 }
 
-.ml-12{
-  margin-left: 3rem;
+.ml-8{
+  margin-left: 2rem;
 }
 
 .mt-6{
@@ -672,12 +672,12 @@ video {
   width: 2.5rem;
 }
 
-.w-28{
-  width: 7rem;
+.w-11\/12{
+  width: 91.666667%;
 }
 
-.w-3\/4{
-  width: 75%;
+.w-28{
+  width: 7rem;
 }
 
 .w-32{
@@ -1176,6 +1176,10 @@ video {
 
   .lg\:h-36{
     height: 9rem;
+  }
+
+  .lg\:w-3\/4{
+    width: 75%;
   }
 
   .lg\:w-36{
