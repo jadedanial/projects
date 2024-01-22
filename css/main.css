@@ -1198,8 +1198,8 @@ video {
     width: 75%;
   }
 
-  .lg\:grid-cols-\[50\%_48\%\]{
-    grid-template-columns: 50% 48%;
+  .lg\:grid-cols-\[50\%_42\%\]{
+    grid-template-columns: 50% 42%;
   }
 
   .lg\:justify-start{
