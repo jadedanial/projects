@@ -1128,6 +1128,10 @@ video {
 }
 
 @media (min-width: 768px){
+  .md\:ml-12{
+    margin-left: 3rem;
+  }
+
   .md\:pt-6{
     padding-top: 1.5rem;
   }
