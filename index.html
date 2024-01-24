@@ -517,15 +517,14 @@
 
         if (featureData[feat_desc]) {
           var data = featureData[feat_desc];
-          element.innerHTML = `<div id="${feat_desc}" class="ams_feature flex flex-col drop-shadow-lg">
-            <div>
-                <p class="text-2xl text-blue-400 pb-8">${data.title}</p>
-                <p class="text-lg lg:mx-80">${data.description}</p>
+          element.innerHTML = `
+          <div id="${feat_desc}" class="ams_feature shadow-2xl">
+            <div class="text-black dark:text-white px-6 py-4">
+              <div class="text-2xl mb-4">${data.title}</div>
+              <p class="text-base lg:mx-52">${data.description}</p>
             </div>
-            <div class="mt-6">
-                <img src="${data.imgSrc}" alt="image" />
-            </div>
-        </div>`;
+            <img class="w-full p-6" src="${data.imgSrc}" alt="image" />
+          </div>`;
         }
 
         clearButton();

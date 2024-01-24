@@ -616,6 +616,10 @@ video {
   margin-bottom: 3.5rem;
 }
 
+.mb-4{
+  margin-bottom: 1rem;
+}
+
 .ml-4{
   margin-left: 1rem;
 }
@@ -722,6 +726,10 @@ video {
 
 .w-auto{
   width: auto;
+}
+
+.w-full{
+  width: 100%;
 }
 
 .translate-x-\[-50\%\]{
@@ -876,6 +884,10 @@ video {
   stroke: #0ea5e9;
 }
 
+.p-6{
+  padding: 1.5rem;
+}
+
 .px-10{
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -886,9 +898,19 @@ video {
   padding-right: 1.25rem;
 }
 
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .py-64{
@@ -898,10 +920,6 @@ video {
 
 .pb-6{
   padding-bottom: 1.5rem;
-}
-
-.pb-8{
-  padding-bottom: 2rem;
 }
 
 .pb-\[30\%\]{
@@ -1001,6 +1019,12 @@ video {
 
 .bg-blend-difference{
   background-blend-mode: difference;
+}
+
+.shadow-2xl{
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .drop-shadow-2xl{
@@ -1152,14 +1176,14 @@ video {
 }
 
 @media (min-width: 1024px){
+  .lg\:mx-52{
+    margin-left: 13rem;
+    margin-right: 13rem;
+  }
+
   .lg\:mx-60{
     margin-left: 15rem;
     margin-right: 15rem;
-  }
-
-  .lg\:mx-80{
-    margin-left: 20rem;
-    margin-right: 20rem;
   }
 
   .lg\:ml-32{
